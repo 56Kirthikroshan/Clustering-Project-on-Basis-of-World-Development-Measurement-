@@ -1,0 +1,62 @@
+# World Development Clustering Project
+
+## Description
+This project analyzes global development indicators to group countries with similar development profiles using **unsupervised learning (clustering)**. The dataset includes metrics like **GDP, literacy rate, life expectancy, health index, and education index** to identify patterns among countries.
+
+### Features
+- **Data Preprocessing:** Handle missing values, normalize/scale data  
+- **K-Means Clustering:** Determine optimal clusters using Elbow and Silhouette methods  
+- **Hierarchical Clustering:** Dendrogram visualization for country grouping  
+- **Cluster Analysis:** Interpret which countries fall into high, medium, or low development clusters  
+- **Visualizations:** Scatter plots, heatmaps, and optional world maps  
+- **Interactive Dashboard (Optional):** Streamlit app for exploring clusters  
+
+## Project Structure
+
+
+world_development_clustering/
+├── data/
+│ └── world_development.csv
+├── models/
+│ ├── kmeans_clustering.py
+│ ├── hierarchical_clustering.py
+├── app/
+│ └── streamlit_app.py
+├── images/
+│ ├── cluster_plot.png
+│ ├── dendrogram.png
+│ └── world_map_clusters.png
+├── README.md
+└── requirements.txt
+
+
+## Technologies Used
+- Python
+- Pandas & NumPy
+- scikit-learn (K-Means, Agglomerative Clustering)
+- Matplotlib / Seaborn / Plotly
+- Streamlit (optional dashboard)
+- GeoPandas / Folium (optional for world maps)
+
+## Installation
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+
+Navigate to the project folder:
+
+cd world_development_clustering
+
+Install dependencies:
+
+pip install -r requirements.txt
+Usage
+
+Run clustering scripts:
+
+python models/kmeans_clustering.py
+python models/hierarchical_clustering.py
+
+Optional: Run Streamlit app for interactive visualization:
+
+streamlit run app/streamlit_app.py
